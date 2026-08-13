@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Advantage Anywhere — Report Update &amp; Next Steps Campaign | August 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: #e9edf1; color: #222; padding: 28px; max-width: 900px; margin: 0 auto; }
+  h1 { font-size: 22px; font-weight: 900; color: #0f1b2d; margin-bottom: 4px; }
+  .subtitle { font-size: 12px; color: #78838f; margin-bottom: 24px; }
+  .section-title { font-size: 12px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: #78838f; margin: 26px 0 12px; border-top: 2px solid #cfe0f2; padding-top: 16px; }
+  .tabs { display: flex; gap: 6px; margin-bottom: 20px; flex-wrap: wrap; }
+  .tab { padding: 7px 16px; border-radius: 20px; font-size: 11px; font-weight: 700; cursor: pointer; border: 0; background: #cfe0f2; color: #0f1b2d; }
+  .tab.active { background: #0f1b2d; color: #fff; }
+  .hidden { display: none; }
+
+  .stat-strip { display: flex; gap: 10px; margin-bottom: 14px; }
+  .stat { flex: 1; background: #0f1b2d; color: #fff; border-radius: 10px; padding: 14px; }
+  .stat .v { font-size: 22px; font-weight: 900; color: #7fc4f5; }
+  .stat .l { font-size: 10px; color: #a9c2dc; margin-top: 3px; line-height: 1.4; }
+  .narrative { background: #fff; border-radius: 14px; padding: 18px 20px; margin-bottom: 10px; box-shadow: 0 2px 10px rgba(0,0,0,.05); }
+  .narrative p { font-size: 12px; color: #444; line-height: 1.75; margin-bottom: 10px; }
+  .narrative p:last-child { margin-bottom: 0; }
+  .narrative strong { color: #0f1b2d; }
+  .titles-card { background: #fff; border-radius: 14px; padding: 16px 18px; border-left: 5px solid #7fc4f5; margin-bottom: 10px; box-shadow: 0 2px 10px rgba(0,0,0,.05); }
+  .titles-card h3 { font-size: 12px; font-weight: 800; color: #0f1b2d; margin-bottom: 8px; }
+  .t-pill { display: inline-block; font-size: 10px; font-weight: 700; background: #cfe0f2; color: #0f1b2d; border-radius: 12px; padding: 4px 10px; margin: 0 4px 6px 0; }
+  .flag { font-size: 10px; color: #856404; background: #fff3cd; border-radius: 6px; padding: 8px 12px; margin-top: 4px; }
+
+  .step { background: #fff; border-radius: 14px; padding: 16px 18px; margin-bottom: 12px; border-left: 5px solid #0f1b2d; box-shadow: 0 2px 10px rgba(0,0,0,.05); }
+  .step.auto { border-left-color: #7fc4f5; }
+  .step-top { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 6px; }
+  .step h3 { font-size: 14px; font-weight: 800; }
+  .step .when { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #7fc4f5; background: #0f1b2d; border-radius: 12px; padding: 3px 10px; white-space: nowrap; }
+  .step .what { font-size: 12px; color: #444; line-height: 1.65; margin-bottom: 8px; }
+  .logic { background: #eef5fa; border-radius: 8px; padding: 10px 14px; font-size: 11px; color: #4a5560; line-height: 1.65; }
+  .logic b { color: #0f1b2d; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; display: block; margin-bottom: 3px; }
+  .ab-row { display: flex; gap: 4px; flex-wrap: wrap; margin: 6px 0 8px; }
+  .ab-pill { font-size: 9px; padding: 2px 8px; border-radius: 12px; font-weight: 600; }
+  .ab-a { background: #cfe0f2; color: #0f1b2d; }
+  .ab-b { background: #dcf1ff; color: #135d8f; }
+
+  .lane { background: #fff; border-radius: 14px; padding: 16px 18px; margin-bottom: 12px; box-shadow: 0 2px 10px rgba(0,0,0,.05); }
+  .lane h3 { font-size: 13px; font-weight: 800; color: #0f1b2d; margin-bottom: 6px; }
+  .lane p, .lane li { font-size: 12px; color: #444; line-height: 1.65; }
+  .search-def { background: #eef5fa; border-radius: 8px; padding: 10px 14px; font-size: 11px; color: #4a5560; line-height: 1.7; margin-top: 8px; }
+  .search-def code { background: #cfe0f2; color: #0f1b2d; padding: 1px 6px; border-radius: 4px; font-family: inherit; font-weight: 700; font-size: 10.5px; }
+
+  .week-row { display: flex; gap: 10px; background: #fff; border-radius: 10px; padding: 12px 16px; margin-bottom: 8px; align-items: baseline; box-shadow: 0 1px 6px rgba(0,0,0,.04); }
+  .week-row .wk { flex: 0 0 150px; font-size: 10px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #0f1b2d; }
+  .week-row .m { font-size: 11.5px; color: #444; line-height: 1.5; }
+  .week-row.hot { background: #dcf1ff; }
+  .checklist { background: #fff; border-radius: 14px; padding: 18px; box-shadow: 0 2px 10px rgba(0,0,0,.05); }
+  .check-item { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid #edf2f6; font-size: 12px; }
+  .check-item:last-child { border-bottom: none; }
+  .check-icon { width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; flex-shrink: 0; font-weight: 700; }
+  .check-icon.done { background: #d1f5d3; color: #1a6b22; }
+  .check-icon.wait { background: #fff3cd; color: #856404; }
+  .check-icon.need { background: #dcf1ff; color: #135d8f; }
+  .check-label { font-weight: 700; }
+  .check-sub { font-size: 10px; color: #8fa0ae; margin-top: 3px; }
+  .go-box { margin-top: 20px; padding: 18px; background: #0f1b2d; border-radius: 14px; color: #fff; text-align: center; }
+  .go-box strong { font-size: 14px; display: block; margin-bottom: 6px; }
+  .go-box span { font-size: 11px; opacity: 0.8; }
+</style>
+</head>
+<body>
+
+<h1>Advantage Anywhere — Report Update &amp; The Next Campaign</h1>
+<p class="subtitle">Prepared by Steven Jones · Wednesday, August 12, 2026 · The Main series is complete — here is what it proved, and the campaign it earned</p>
+
+<div class="tabs">
+  <div class="tab active" onclick="showTab('report', this)">Report Update</div>
+  <div class="tab" onclick="showTab('seq', this)">The Next Campaign — Step by Step</div>
+  <div class="tab" onclick="showTab('lanes', this)">Outreach Lanes</div>
+  <div class="tab" onclick="showTab('cal', this)">Timeline &amp; Checklist</div>
+</div>
+
+<!-- REPORT UPDATE -->
+<div id="tab-report">
+  <div class="section-title">Where the program stands — verified live tonight</div>
+  <div class="stat-strip">
+    <div class="stat"><div class="v">11 / 11</div><div class="l">sends complete — the full chain finished its run Aug 6</div></div>
+    <div class="stat"><div class="v">100%</div><div class="l">of sends past full five-day maturity — the record below is settled</div></div>
+    <div class="stat"><div class="v">51.9%</div><div class="l">blended click-to-open across graded sends — exceptional conversion of attention</div></div>
+    <div class="stat"><div class="v">50–67%</div><div class="l">click-to-open on behavior-triggered follow-ups — the program's strongest play</div></div>
+  </div>
+  <div class="narrative">
+    <p><strong>The Main series is complete.</strong> I verified the campaign system live tonight: all eleven sends have finished their run — the five Main emails, the three clicker follow-ups, and the three opener follow-ups, with the final pair completing August 6. Every send is now past its five-day maturity window, which means this update reads from a settled record rather than a moving one.</p>
+    <p><strong>What the completed program proves is unusual, and worth saying plainly: your message converts.</strong> Across the graded sends, readers who opened clicked through at a blended 51.9% — and on individual sends that figure ranged to three-quarters. Most campaigns fight for attention <em>and</em> action; this one has already won the second fight. The whole architecture of the next campaign follows from that single fact — the mission is to grow the room, because the performance inside the room is already elite.</p>
+    <p><strong>The buying committee also revealed itself — and it's wider than anyone drew it up.</strong> Four distinct Vice Presidents of Human Resources clicked. Quality and Clinical Integration leadership engaged. And the fourth Main send brought technology leadership through the door in force — CIOs, CTOs, and VPs of IT — which is why IT chiefs are treated as a primary segment in the next campaign, not a bonus audience. Meanwhile the behavior-triggered follow-ups ran 50–67% click-to-open, confirming that the return visit is this program's single strongest play.</p>
+    <p><strong>The five-day discipline earned its keep once more:</strong> engagement kept compounding for days after each send — one send doubled its numbers after day three — so every verdict in the next campaign will continue to wait for full maturity before a single decision is made on it.</p>
+  </div>
+  <div class="titles-card">
+    <h3>The proven committee — every title below clicked in the Main series</h3>
+    <span class="t-pill">CIOs / SVP-CIOs</span><span class="t-pill">CTOs</span><span class="t-pill">VPs of Information Technology</span><span class="t-pill">VPs of Human Resources (×4)</span><span class="t-pill">VP, Organizational Development</span><span class="t-pill">VP, Social Services &amp; Life Enrichment</span><span class="t-pill">Director, Clinical Integration &amp; Business Development</span><span class="t-pill">Directors of Quality</span>
+  </div>
+  <div class="flag">Send-completion status verified live in the campaign system tonight, Aug 12. Performance figures are the program's graded numbers as of their day-five pulls; the next connected working session refreshes any per-send rate on request.</div>
+</div>
+
+<!-- SEQUENCE -->
+<div id="tab-seq" class="hidden">
+  <div class="section-title">Six steps, in order — and why each one exists</div>
+
+  <div class="step">
+    <div class="step-top"><h3>Step 1 · The Proof Story — 78% to 89% in 90 Days</h3><span class="when">Week of Aug 24</span></div>
+    <div class="ab-row"><span class="ab-pill ab-a">A: "How one community found 11 points"</span><span class="ab-pill ab-b">B: "The 90-day census climb, step by step"</span></div>
+    <p class="what">The sequence opens with the occupancy narrative that has tested best in this program — a community's climb from 78% to 89% in 90 days, told by the numbers. A/B subject test decided by open rate. <strong>And as it sends, Steven is already on the phone: he personally follows up with the technology chiefs, HR leaders, and Quality and Clinical Integration leaders who clicked during the Main series — most active clickers first, by phone and direct message — so the program's warmest hands hear a human voice the same week the new sequence opens.</strong></p>
+    <div class="logic"><b>The logic</b>The 78→89 framing earned the lead in earlier testing — and in a program where openers convert at half-or-better, leading with the strongest proof puts the best foot forward and gives every later send a data-informed head start.</div>
+  </div>
+
+  <div class="step">
+    <div class="step-top"><h3>Step 2 · The Personal Video Introduction</h3><span class="when">Week of Aug 31</span></div>
+    <div class="ab-row"><span class="ab-pill ab-a">A: "90 seconds on the move-ins that never called back"</span><span class="ab-pill ab-b">B: "I recorded this about your follow-up gap"</span></div>
+    <p class="what">Steven on camera, under 90 seconds, on census and the follow-up gap that quietly costs communities move-ins. Thumbnail with play button; one clear ask.</p>
+    <div class="logic"><b>The logic</b>Video lands hardest on an audience that already trusts the sender — which is exactly what the proof story creates. Arriving second, the personal introduction meets a warmed room, where personalized video does its best work: benchmarks put it at roughly +40% opens and multiples on response.</div>
+  </div>
+
+  <div class="step">
+    <div class="step-top"><h3>Step 3 · The Direct Ask</h3><span class="when">Week of Sep 7</span></div>
+    <p class="what">Short and direct — one clear ask for a conversation, with the video and walkthrough one click away for anyone arriving fresh.</p>
+    <div class="logic"><b>The logic</b>Two rounds of live data shaped this slot. An audience that clicks through at half-or-better once it opens has earned a direct request — hedging here would waste the very conversion strength the program proved.</div>
+  </div>
+
+  <div class="step auto">
+    <div class="step-top"><h3>Step 4 · The Clicker Follow-Up — Automated</h3><span class="when">Always on · within 48h of any click</span></div>
+    <p class="what">Any click, on any send, triggers a tailored follow-up within 48 hours, referencing what they clicked — no human in the loop. Built as a workflow and seed-tested before launch.</p>
+    <div class="logic"><b>The logic</b>The behavior-triggered follow-ups were the Main series' best performers at 50–67% click-to-open. A result that consistent gets promoted from practice to infrastructure: automated, immediate, and incapable of being forgotten on a busy day. Every click is a signal of intent, and this step answers every one of them.</div>
+  </div>
+
+  <div class="step">
+    <div class="step-top"><h3>Step 5 · The Reader Follow-Up</h3><span class="when">Week of Sep 14</span></div>
+    <p class="what">A tailored touch for readers who opened any send but haven't yet clicked — a different door into the same story. Segment defined as "opened any send in this campaign, clicked none," count verified the day before it fires.</p>
+    <div class="logic"><b>The logic</b>In a program where half of openers click, the opener who hasn't clicked yet is the highest-value remainder in the file — clearly interested, one nudge from acting. They get a fresh angle rather than a rerun, and the segment count is checked before firing because precision is the whole point of the play.</div>
+  </div>
+
+  <div class="step">
+    <div class="step-top"><h3>Step 6 · The Finale</h3><span class="when">Week of Sep 14–18</span></div>
+    <div class="ab-row"><span class="ab-pill ab-a">A: "Last note from me (for now)"</span><span class="ab-pill ab-b">B: "One more thing before I go quiet"</span></div>
+    <p class="what">A clearly-final send — honest, unhurried, unmistakably the last one.</p>
+    <div class="logic"><b>The logic</b>A real ending concentrates decisions — the clearly-final pattern has consistently earned a late wave of engagement wherever it has run. It also respects the reader, which is the posture this whole program is built on.</div>
+  </div>
+</div>
+
+<!-- LANES -->
+<div id="tab-lanes" class="hidden">
+  <div class="section-title">Three lanes running alongside the emails — all in service of growing the room</div>
+
+  <div class="lane">
+    <h3>Lane 1 · Sales Navigator — prospecting the proven committee</h3>
+    <p>Saved searches run weekly against the exact titles the Main series proved will engage. New prospects enter a connect-then-converse cadence; a prospect graduates to the email list only with a working email and a legitimate basis to contact. This lane is the campaign's growth engine, and it compounds week over week.</p>
+    <div class="search-def">
+      <strong>Saved-search definitions:</strong><br>
+      <code>Search 1 — Technology (primary)</code> "Chief Information Officer" OR "CIO" OR "Chief Technology Officer" OR "VP Information Technology" OR "VP of IT"<br>
+      <code>Search 2 — People &amp; Culture</code> "VP Human Resources" OR "VP of HR" OR "VP Organizational Development"<br>
+      <code>Search 3 — Quality &amp; Clinical</code> "Director of Quality" OR "Clinical Integration" OR "VP Social Services" OR "Life Enrichment"<br>
+      <code>Industry</code> Hospitals &amp; Health Care · Senior-living operators · <code>Geography</code> United States · <code>Seniority</code> VP+ preferred, Director+ accepted · sorted by recent activity<br>
+      <strong>Cadence:</strong> Day 0 — personalized invite, no pitch · Day 3 — thank-you with one useful observation, no link · Day 7 — the 90-second video, shared as a courtesy · Day 12 — the conversation ask. Weekly volume stays comfortably inside platform guardrails.
+    </div>
+    <div class="logic" style="margin-top:8px"><b>The logic</b>Main 4 proved technology leadership belongs at the front of this list — they arrived in force the moment the message reached them, so Search 1 is the primary search, not an afterthought. Four distinct HR VPs clicking earned Search 2 its own lane. The no-pitch cadence reflects how senior committee members actually connect: with people first, material second.</div>
+  </div>
+
+  <div class="lane">
+    <h3>Lane 2 · The existing network — the warm layer</h3>
+    <p>Steven's LinkedIn relationships matched against the committee profile — technology, HR, quality, and operations leadership in senior living — imported to the email audience as a named, verified list, with personal notes to the closest matches before the campaign opens.</p>
+    <div class="logic" style="margin-top:8px"><b>The logic</b>In a program whose one constraint is room size, the fastest room-growth available is the network that already exists. A verified, name-by-name import also protects deliverability — every contact is real, current, and legitimately reachable.</div>
+  </div>
+
+  <div class="lane">
+    <h3>Lane 3 · Steven's personal outreach — the closing lane</h3>
+    <p><strong>It opens before the first email does:</strong> Steven personally circles back to the last campaign's most-active clickers — the highest click-volume contacts, most clicks first — by phone and direct message. They are the warmest hands in the file, and they hear a human voice before anything new arrives in their inbox.</p>
+    <p>Then, as the new sequence runs: Every clicker lands on the next morning's call sheet, ranked by total clicks — the multi-click HR and Quality leaders from the Main series open the queue. Steven calls within 48 hours of a click, five calls per day, each with a one-line opener tied to what the person clicked. Outcomes are logged in a line; voicemails retry in three business days, three attempts max. New connection acceptances get a personal message within a day.</p>
+    <div class="logic" style="margin-top:8px"><b>The logic</b>When half your openers click, the click list <em>is</em> the pipeline — it deserves a human voice, fast, while intent is warm. The 48-hour window matches the automation's rhythm so the email touch and the personal touch arrive as one motion, and the five-call cap keeps the practice sustainable every single day.</div>
+  </div>
+</div>
+
+<!-- TIMELINE -->
+<div id="tab-cal" class="hidden">
+  <div class="section-title">The runway</div>
+  <div class="week-row"><span class="wk">Week of Aug 10</span><span class="m">Foundation — engaged-core list built and verified · Sales Navigator searches live · network matching under way</span></div>
+  <div class="week-row"><span class="wk">Week of Aug 17</span><span class="m">Creative — video scripted and in production · sequence copy finalized · automations built and tested</span></div>
+  <div class="week-row hot"><span class="wk">Week of Aug 24</span><span class="m"><strong>Step 1 launches — the proof story</strong></span></div><div class="week-row"><span class="wk">Week of Aug 31</span><span class="m"><strong>Step 2 — the personal video introduction</strong></span></div>
+  <div class="week-row"><span class="wk">Sep 7 – Sep 18</span><span class="m">Steps 2–6 on full-maturity spacing · clicker automation always on · list growing weekly · call sheets daily</span></div>
+  <div class="week-row"><span class="wk">Week of Sep 21</span><span class="m">Full-sequence report — same format as this one — and the growth road map for the next wave</span></div>
+
+  <div class="section-title">Launch checklist</div>
+  <div class="checklist">
+    <div class="check-item"><div class="check-icon done">✓</div><div><div class="check-label">Main series complete — all 11 sends finished and matured</div><div class="check-sub">Verified live tonight — final pair completed Aug 6, every send past day five</div></div></div>
+    <div class="check-item"><div class="check-icon done">✓</div><div><div class="check-label">The committee mapped — every target title has already clicked</div><div class="check-sub">Technology promoted to primary segment on Main 4's evidence</div></div></div>
+    <div class="check-item"><div class="check-icon done">✓</div><div><div class="check-label">Campaign architecture set — six steps, each justified by data</div><div class="check-sub">This document is the blueprint; nothing in it is guesswork</div></div></div>
+    <div class="check-item"><div class="check-icon wait">?</div><div><div class="check-label">Growth engine spinning up — searches and network import this week</div><div class="check-sub">Every verified committee contact grows the room your message already wins</div></div></div>
+    <div class="check-item"><div class="check-icon wait">?</div><div><div class="check-label">Video — in production, on screen as Step 2 the week of Aug 31</div><div class="check-sub">The introduction ships only when it is exactly right</div></div></div>
+    <div class="check-item"><div class="check-icon need">!</div><div><div class="check-label">YOUR GO — Step 1 (the proof story), week of Aug 24</div><div class="check-sub">Nothing sends until you approve it</div></div></div>
+  </div>
+  <div class="go-box"><strong>Ready to launch the moment you say "go."</strong><span>Every send builds as a draft first — nothing reaches an inbox without your individual approval.</span></div>
+</div>
+
+<script>
+function showTab(tab, el) {
+  ['report','seq','lanes','cal'].forEach(t => document.getElementById('tab-' + t).classList.add('hidden'));
+  document.getElementById('tab-' + tab).classList.remove('hidden');
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+}
+</script>
+</body>
+</html>

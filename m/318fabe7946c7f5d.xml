@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Gather input="dtmf" numDigits="1" timeout="12" action="https://cdn.jsdelivr.net/gh/stevenjones-bot/advantage-anywhere@a1d9e351c327008e96ec20d45f9bc881fe9a150d/m/1f495114a07c49cd.xml" method="GET">
+    <Say voice="alice" language="en-US">Thank you for calling Maple Grove Care Center. If you know your party's extension, you may dial it at any time. For the company directory, press 9. For the front desk, press 0.</Say>
+  </Gather>
+  <Say voice="alice" language="en-US">We did not receive a selection. Goodbye.</Say>
+  <Hangup/>
+</Response>

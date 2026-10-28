@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
-  <Play>https://cdn.jsdelivr.net/gh/stevenjones-bot/advantage-anywhere@ca676c83b98a3adf0dee28503c5bab6d49a67224/m/a4b94eb61037a755.mp3</Play>
+  <Play>https://stevenjones-bot.github.io/advantage-anywhere/m/a4b94eb61037a755.mp3</Play>
   <Say voice="alice" language="en-US">Hi, you've reached Jordan Testcase at Maple Grove Care Center. I'm away from my desk. Please leave a message after the tone.</Say>
   <Record playBeep="true" maxLength="90" timeout="20" trim="do-not-trim" finishOnKey="#" channels="single" format="mp3"/>
   <Hangup/>

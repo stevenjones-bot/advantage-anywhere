@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Say voice="alice" language="en-US">Good morning, Maple Grove Care Center, this is Dana. How can I help you?</Say>
+  <Record playBeep="false" maxLength="15" timeout="6" trim="do-not-trim" channels="single" format="mp3"/>
+  <Say voice="alice" language="en-US">Hello? Is anyone there?</Say>
+  <Record playBeep="false" maxLength="15" timeout="8" trim="do-not-trim" channels="single" format="mp3"/>
+  <Hangup/>
+</Response>

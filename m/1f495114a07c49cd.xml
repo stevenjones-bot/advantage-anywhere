@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Gather input="dtmf" numDigits="3" timeout="12" action="https://cdn.jsdelivr.net/gh/stevenjones-bot/advantage-anywhere@ffff38e91f2aadbfe9e52a05a4da0f480753f959/m/dea300ee7d31bdcc.xml" method="GET">
+    <Say voice="alice" language="en-US">Company directory. Please enter the first three letters of your party's last name.</Say>
+  </Gather>
+  <Say voice="alice" language="en-US">No entry was received. Goodbye.</Say>
+  <Hangup/>
+</Response>

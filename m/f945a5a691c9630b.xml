@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Pause length="40"/>
+  <Say voice="alice" language="en-US">Hi, you've reached Jordan Testcase at Maple Grove Care Center. I'm away from my desk. Please leave a message after the tone.</Say>
+  <Record playBeep="true" maxLength="90" timeout="20" trim="do-not-trim" finishOnKey="#" channels="single" format="mp3"/>
+  <Hangup/>
+</Response>
